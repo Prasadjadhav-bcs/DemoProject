@@ -8,13 +8,13 @@ import com.example.demo.service.WorldService;
 public class Factory {
 		
 	public static DocumentService getObject(String type){
-		if(type.equals("pdf")) {
-			PdfService pd = new PdfService();
-			return pd;
+		if(type.equals("PDF")) {
+			PdfService pdf = new PdfService();
+			return pdf;
 		}
-		if(type.equals("excel")) {
-			ExcelService ex = new ExcelService();
-			return ex;
+		if(type.equals("EXCEL")) {
+			ExcelService excel = new ExcelService();
+			return excel;
 		}
 		if(type.equals("world")) {
 			WorldService ws = new WorldService();
